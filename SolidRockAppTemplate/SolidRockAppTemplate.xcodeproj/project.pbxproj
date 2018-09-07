@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
+		A27B80322143062B000020E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B80312143062B000020E1 /* ViewController.swift */; };
+		A27B80352143062B000020E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80332143062B000020E1 /* Main.storyboard */; };
+		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
+		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
+		A27B80452143062D000020E1 /* SolidRockAppTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */; };
+		A27B80502143062D000020E1 /* SolidRockAppTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A27B80412143062D000020E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A27B80242143062B000020E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A27B802B2143062B000020E1;
+			remoteInfo = SolidRockAppTemplate;
+		};
+		A27B804C2143062D000020E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A27B80242143062B000020E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A27B802B2143062B000020E1;
+			remoteInfo = SolidRockAppTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A27B80312143062B000020E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A27B80342143062B000020E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A27B80392143062D000020E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A27B803B2143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27B80402143062D000020E1 /* SolidRockAppTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidRockAppTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidRockAppTemplateTests.swift; sourceTree = "<group>"; };
+		A27B80462143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27B804B2143062D000020E1 /* SolidRockAppTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidRockAppTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidRockAppTemplateUITests.swift; sourceTree = "<group>"; };
+		A27B80512143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A27B80292143062B000020E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B803D2143062D000020E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B80482143062D000020E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A27B80232143062B000020E1 = {
+			isa = PBXGroup;
+			children = (
+				A27B802E2143062B000020E1 /* SolidRockAppTemplate */,
+				A27B80432143062D000020E1 /* SolidRockAppTemplateTests */,
+				A27B804E2143062D000020E1 /* SolidRockAppTemplateUITests */,
+				A27B802D2143062B000020E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A27B802D2143062B000020E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */,
+				A27B80402143062D000020E1 /* SolidRockAppTemplateTests.xctest */,
+				A27B804B2143062D000020E1 /* SolidRockAppTemplateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A27B802E2143062B000020E1 /* SolidRockAppTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A27B802F2143062B000020E1 /* AppDelegate.swift */,
+				A27B80312143062B000020E1 /* ViewController.swift */,
+				A27B80332143062B000020E1 /* Main.storyboard */,
+				A27B80362143062D000020E1 /* Assets.xcassets */,
+				A27B80382143062D000020E1 /* LaunchScreen.storyboard */,
+				A27B803B2143062D000020E1 /* Info.plist */,
+			);
+			path = SolidRockAppTemplate;
+			sourceTree = "<group>";
+		};
+		A27B80432143062D000020E1 /* SolidRockAppTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */,
+				A27B80462143062D000020E1 /* Info.plist */,
+			);
+			path = SolidRockAppTemplateTests;
+			sourceTree = "<group>";
+		};
+		A27B804E2143062D000020E1 /* SolidRockAppTemplateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */,
+				A27B80512143062D000020E1 /* Info.plist */,
+			);
+			path = SolidRockAppTemplateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A27B802B2143062B000020E1 /* SolidRockAppTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A27B80542143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplate" */;
+			buildPhases = (
+				A27B80282143062B000020E1 /* Sources */,
+				A27B80292143062B000020E1 /* Frameworks */,
+				A27B802A2143062B000020E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolidRockAppTemplate;
+			productName = SolidRockAppTemplate;
+			productReference = A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A27B803F2143062D000020E1 /* SolidRockAppTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A27B80572143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateTests" */;
+			buildPhases = (
+				A27B803C2143062D000020E1 /* Sources */,
+				A27B803D2143062D000020E1 /* Frameworks */,
+				A27B803E2143062D000020E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A27B80422143062D000020E1 /* PBXTargetDependency */,
+			);
+			name = SolidRockAppTemplateTests;
+			productName = SolidRockAppTemplateTests;
+			productReference = A27B80402143062D000020E1 /* SolidRockAppTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A27B804A2143062D000020E1 /* SolidRockAppTemplateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A27B805A2143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateUITests" */;
+			buildPhases = (
+				A27B80472143062D000020E1 /* Sources */,
+				A27B80482143062D000020E1 /* Frameworks */,
+				A27B80492143062D000020E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A27B804D2143062D000020E1 /* PBXTargetDependency */,
+			);
+			name = SolidRockAppTemplateUITests;
+			productName = SolidRockAppTemplateUITests;
+			productReference = A27B804B2143062D000020E1 /* SolidRockAppTemplateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A27B80242143062B000020E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = SolidRock;
+				TargetAttributes = {
+					A27B802B2143062B000020E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A27B803F2143062D000020E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A27B802B2143062B000020E1;
+					};
+					A27B804A2143062D000020E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A27B802B2143062B000020E1;
+					};
+				};
+			};
+			buildConfigurationList = A27B80272143062B000020E1 /* Build configuration list for PBXProject "SolidRockAppTemplate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A27B80232143062B000020E1;
+			productRefGroup = A27B802D2143062B000020E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A27B802B2143062B000020E1 /* SolidRockAppTemplate */,
+				A27B803F2143062D000020E1 /* SolidRockAppTemplateTests */,
+				A27B804A2143062D000020E1 /* SolidRockAppTemplateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A27B802A2143062B000020E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */,
+				A27B80372143062D000020E1 /* Assets.xcassets in Resources */,
+				A27B80352143062B000020E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B803E2143062D000020E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B80492143062D000020E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A27B80282143062B000020E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27B80322143062B000020E1 /* ViewController.swift in Sources */,
+				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B803C2143062D000020E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27B80452143062D000020E1 /* SolidRockAppTemplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27B80472143062D000020E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27B80502143062D000020E1 /* SolidRockAppTemplateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A27B80422143062D000020E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A27B802B2143062B000020E1 /* SolidRockAppTemplate */;
+			targetProxy = A27B80412143062D000020E1 /* PBXContainerItemProxy */;
+		};
+		A27B804D2143062D000020E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A27B802B2143062B000020E1 /* SolidRockAppTemplate */;
+			targetProxy = A27B804C2143062D000020E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A27B80332143062B000020E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A27B80342143062B000020E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A27B80382143062D000020E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A27B80392143062D000020E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A27B80522143062D000020E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A27B80532143062D000020E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A27B80552143062D000020E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A27B80562143062D000020E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A27B80582143062D000020E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidRockAppTemplate.app/SolidRockAppTemplate";
+			};
+			name = Debug;
+		};
+		A27B80592143062D000020E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidRockAppTemplate.app/SolidRockAppTemplate";
+			};
+			name = Release;
+		};
+		A27B805B2143062D000020E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolidRockAppTemplate;
+			};
+			name = Debug;
+		};
+		A27B805C2143062D000020E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolidRockAppTemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolidRockAppTemplate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A27B80272143062B000020E1 /* Build configuration list for PBXProject "SolidRockAppTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27B80522143062D000020E1 /* Debug */,
+				A27B80532143062D000020E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27B80542143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27B80552143062D000020E1 /* Debug */,
+				A27B80562143062D000020E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27B80572143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27B80582143062D000020E1 /* Debug */,
+				A27B80592143062D000020E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27B805A2143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27B805B2143062D000020E1 /* Debug */,
+				A27B805C2143062D000020E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A27B80242143062B000020E1 /* Project object */;
+}
