@@ -12,12 +12,17 @@ import UIKit
 /// Can be used for example to handle background <-> foreground state switches for all viewcontrollers.
 class BaseViewController: UIViewController {
     
+    // Now every viewcontroller has a log
+    var log = Logger()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerAllNotifications()
     }
     
     deinit {
+        // Never forget removeObserver anymore.
+        // This will ensure that every registration is removed - also in derived viewcontrollers.
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -27,10 +32,10 @@ class BaseViewController: UIViewController {
     }
     
     @objc func didEnterBackground() {
-        
+        // Override this in the derived viewcontroller
     }
     
     @objc func willEnterForeground() {
-        
+        // Override this in the derived viewcontroller
     }
 }

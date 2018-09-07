@@ -10,8 +10,6 @@ import UIKit
 
 /// Show a list of movies.
 class MoviesViewController: BaseViewController {
-
-    private let log = Logger()
     
     @IBOutlet weak var tableView: UITableView! {
         // Separate IBOutlet configuration to didSet

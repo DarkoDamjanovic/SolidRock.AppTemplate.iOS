@@ -119,6 +119,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		A2733C1921432B4B00B990E1 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				A2733C16214327FD00B990E1 /* Base */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		A27B80232143062B000020E1 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +157,7 @@
 				A2843866214307C80005DE7D /* Resources */,
 				A2843863214307960005DE7D /* Services */,
 				A28438642143079C0005DE7D /* Models */,
-				A2733C16214327FD00B990E1 /* Base */,
+				A2733C1921432B4B00B990E1 /* Reusable */,
 				A2843865214307A10005DE7D /* Modules */,
 			);
 			path = SolidRockAppTemplate;
