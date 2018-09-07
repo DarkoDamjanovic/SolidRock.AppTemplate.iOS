@@ -1,0 +1,6 @@
+framework module Pods_SolidRockAppTemplate {
+  umbrella header "Pods-SolidRockAppTemplate-umbrella.h"
+
+  export *
+  module * { export * }
+}

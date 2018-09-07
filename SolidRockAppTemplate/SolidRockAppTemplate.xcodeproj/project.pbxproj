@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32A0ACBE27CE40931D9D6E3F /* Pods_SolidRockAppTemplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476673CF6D8F5FFDDFFB6176 /* Pods_SolidRockAppTemplateUITests.framework */; };
+		600D07178B55005A0BA94694 /* Pods_SolidRockAppTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
-		A27B80322143062B000020E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B80312143062B000020E1 /* ViewController.swift */; };
-		A27B80352143062B000020E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80332143062B000020E1 /* Main.storyboard */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
 		A27B80452143062D000020E1 /* SolidRockAppTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */; };
 		A27B80502143062D000020E1 /* SolidRockAppTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */; };
+		A284386B21430A8E0005DE7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284386A21430A8E0005DE7D /* Extensions.swift */; };
+		A284386E21430C0E0005DE7D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284386D21430C0E0005DE7D /* Result.swift */; };
+		A284387021430D610005DE7D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284386F21430D610005DE7D /* Logger.swift */; };
+		A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284387121430EBD0005DE7D /* UserDefaultsKeys.swift */; };
+		A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2843873214310CC0005DE7D /* NotificationNames.swift */; };
+		A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284387621431AB10005DE7D /* MoviesViewController.swift */; };
+		A284387921431B0B0005DE7D /* MoviesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A284387821431B0B0005DE7D /* MoviesViewController.storyboard */; };
+		B12A0E7555FB23CD60F18E54 /* Pods_SolidRockAppTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F060E537C10A244788DF88 /* Pods_SolidRockAppTemplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BF73A7B311F0260EC716B73 /* Pods-SolidRockAppTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateTests/Pods-SolidRockAppTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		28F060E537C10A244788DF88 /* Pods_SolidRockAppTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A92D8A2DFF936594E127EE /* Pods-SolidRockAppTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplate/Pods-SolidRockAppTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		3B58EAD45731F17AEE177853 /* Pods-SolidRockAppTemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateUITests/Pods-SolidRockAppTemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		404C54FF4D4ED2CB55E4CCD8 /* Pods-SolidRockAppTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplate/Pods-SolidRockAppTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		476673CF6D8F5FFDDFFB6176 /* Pods_SolidRockAppTemplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE6961728EDB366B579E317 /* Pods-SolidRockAppTemplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateUITests/Pods-SolidRockAppTemplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27B80312143062B000020E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A27B80342143062B000020E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27B80392143062D000020E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27B803B2143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +60,15 @@
 		A27B804B2143062D000020E1 /* SolidRockAppTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidRockAppTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidRockAppTemplateUITests.swift; sourceTree = "<group>"; };
 		A27B80512143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A284386A21430A8E0005DE7D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A284386D21430C0E0005DE7D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A284386F21430D610005DE7D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A284387121430EBD0005DE7D /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		A2843873214310CC0005DE7D /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		A284387621431AB10005DE7D /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		A284387821431B0B0005DE7D /* MoviesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviesViewController.storyboard; sourceTree = "<group>"; };
+		CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF54DA05D80BD0B8352F3D3 /* Pods-SolidRockAppTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateTests/Pods-SolidRockAppTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12A0E7555FB23CD60F18E54 /* Pods_SolidRockAppTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600D07178B55005A0BA94694 /* Pods_SolidRockAppTemplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A0ACBE27CE40931D9D6E3F /* Pods_SolidRockAppTemplateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94AF7E0F909A44BE8137B384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F060E537C10A244788DF88 /* Pods_SolidRockAppTemplate.framework */,
+				CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */,
+				476673CF6D8F5FFDDFFB6176 /* Pods_SolidRockAppTemplateUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A27B80232143062B000020E1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				A27B80432143062D000020E1 /* SolidRockAppTemplateTests */,
 				A27B804E2143062D000020E1 /* SolidRockAppTemplateUITests */,
 				A27B802D2143062B000020E1 /* Products */,
+				DE018875D71E9A43FC74E6C3 /* Pods */,
+				94AF7E0F909A44BE8137B384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +134,12 @@
 		A27B802E2143062B000020E1 /* SolidRockAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A27B802F2143062B000020E1 /* AppDelegate.swift */,
-				A27B80312143062B000020E1 /* ViewController.swift */,
-				A27B80332143062B000020E1 /* Main.storyboard */,
-				A27B80362143062D000020E1 /* Assets.xcassets */,
-				A27B80382143062D000020E1 /* LaunchScreen.storyboard */,
-				A27B803B2143062D000020E1 /* Info.plist */,
+				A28438622143078B0005DE7D /* Application */,
+				A284386C21430BF90005DE7D /* Util */,
+				A2843866214307C80005DE7D /* Resources */,
+				A2843863214307960005DE7D /* Services */,
+				A28438642143079C0005DE7D /* Models */,
+				A2843865214307A10005DE7D /* Modules */,
 			);
 			path = SolidRockAppTemplate;
 			sourceTree = "<group>";
@@ -125,6 +162,88 @@
 			path = SolidRockAppTemplateUITests;
 			sourceTree = "<group>";
 		};
+		A28438622143078B0005DE7D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A27B802F2143062B000020E1 /* AppDelegate.swift */,
+				A284386A21430A8E0005DE7D /* Extensions.swift */,
+				A284387121430EBD0005DE7D /* UserDefaultsKeys.swift */,
+				A2843873214310CC0005DE7D /* NotificationNames.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A2843863214307960005DE7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2843867214308320005DE7D /* WebService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A28438642143079C0005DE7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2843865214307A10005DE7D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A284387521431A7B0005DE7D /* Movies */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2843866214307C80005DE7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A27B803B2143062D000020E1 /* Info.plist */,
+				A27B80362143062D000020E1 /* Assets.xcassets */,
+				A27B80382143062D000020E1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A2843867214308320005DE7D /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		A284386C21430BF90005DE7D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A284386F21430D610005DE7D /* Logger.swift */,
+				A284386D21430C0E0005DE7D /* Result.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A284387521431A7B0005DE7D /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				A284387621431AB10005DE7D /* MoviesViewController.swift */,
+				A284387821431B0B0005DE7D /* MoviesViewController.storyboard */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		DE018875D71E9A43FC74E6C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				404C54FF4D4ED2CB55E4CCD8 /* Pods-SolidRockAppTemplate.debug.xcconfig */,
+				39A92D8A2DFF936594E127EE /* Pods-SolidRockAppTemplate.release.xcconfig */,
+				EBF54DA05D80BD0B8352F3D3 /* Pods-SolidRockAppTemplateTests.debug.xcconfig */,
+				0BF73A7B311F0260EC716B73 /* Pods-SolidRockAppTemplateTests.release.xcconfig */,
+				9FE6961728EDB366B579E317 /* Pods-SolidRockAppTemplateUITests.debug.xcconfig */,
+				3B58EAD45731F17AEE177853 /* Pods-SolidRockAppTemplateUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27B80542143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplate" */;
 			buildPhases = (
+				C12642257898F3989E2E7366 /* [CP] Check Pods Manifest.lock */,
 				A27B80282143062B000020E1 /* Sources */,
 				A27B80292143062B000020E1 /* Frameworks */,
 				A27B802A2143062B000020E1 /* Resources */,
+				F609D0916FE76AA9BB6452EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27B80572143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateTests" */;
 			buildPhases = (
+				E3368353050689788EEE51E9 /* [CP] Check Pods Manifest.lock */,
 				A27B803C2143062D000020E1 /* Sources */,
 				A27B803D2143062D000020E1 /* Frameworks */,
 				A27B803E2143062D000020E1 /* Resources */,
@@ -167,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27B805A2143062D000020E1 /* Build configuration list for PBXNativeTarget "SolidRockAppTemplateUITests" */;
 			buildPhases = (
+				BA42D1BB40D6E6ED5A4A8F8E /* [CP] Check Pods Manifest.lock */,
 				A27B80472143062D000020E1 /* Sources */,
 				A27B80482143062D000020E1 /* Frameworks */,
 				A27B80492143062D000020E1 /* Resources */,
@@ -229,9 +352,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A284387921431B0B0005DE7D /* MoviesViewController.storyboard in Resources */,
 				A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */,
 				A27B80372143062D000020E1 /* Assets.xcassets in Resources */,
-				A27B80352143062B000020E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +374,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA42D1BB40D6E6ED5A4A8F8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolidRockAppTemplateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12642257898F3989E2E7366 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolidRockAppTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3368353050689788EEE51E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolidRockAppTemplateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F609D0916FE76AA9BB6452EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SolidRockAppTemplate/Pods-SolidRockAppTemplate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SolidRockAppTemplate/Pods-SolidRockAppTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A27B80282143062B000020E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27B80322143062B000020E1 /* ViewController.swift in Sources */,
+				A284387021430D610005DE7D /* Logger.swift in Sources */,
+				A284386B21430A8E0005DE7D /* Extensions.swift in Sources */,
+				A284386E21430C0E0005DE7D /* Result.swift in Sources */,
+				A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */,
+				A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */,
 				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,
+				A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +496,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A27B80332143062B000020E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A27B80342143062B000020E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A27B80382143062D000020E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,15 +623,17 @@
 		};
 		A27B80552143062D000020E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404C54FF4D4ED2CB55E4CCD8 /* Pods-SolidRockAppTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SolidRockAppTemplate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SolidRockAppTemplate/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.apptemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,15 +642,17 @@
 		};
 		A27B80562143062D000020E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A92D8A2DFF936594E127EE /* Pods-SolidRockAppTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SolidRockAppTemplate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SolidRockAppTemplate/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.apptemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,6 +661,7 @@
 		};
 		A27B80582143062D000020E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF54DA05D80BD0B8352F3D3 /* Pods-SolidRockAppTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +682,7 @@
 		};
 		A27B80592143062D000020E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF73A7B311F0260EC716B73 /* Pods-SolidRockAppTemplateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +703,7 @@
 		};
 		A27B805B2143062D000020E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE6961728EDB366B579E317 /* Pods-SolidRockAppTemplateUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +723,7 @@
 		};
 		A27B805C2143062D000020E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B58EAD45731F17AEE177853 /* Pods-SolidRockAppTemplateUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

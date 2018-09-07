@@ -1,0 +1,6 @@
+framework module Pods_SolidRockAppTemplateUITests {
+  umbrella header "Pods-SolidRockAppTemplateUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
