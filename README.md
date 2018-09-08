@@ -1,4 +1,4 @@
-![SolidRock](https://github.com/DarkoDamjanovic/SolidRock.AppTemplate.iOS/edit/master/solidrock.jpg "SolidRock")
+![SolidRock](https://github.com/DarkoDamjanovic/SolidRock.AppTemplate.iOS/blob/master/solidrock.jpg "SolidRock")
 
 # SolidRock AppTemplate for iOS
 
