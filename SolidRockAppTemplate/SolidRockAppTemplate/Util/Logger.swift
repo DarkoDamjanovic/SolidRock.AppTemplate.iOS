@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A basic Logger class. Default is to log only in DEBUG builds.
+/// A basic Logger class. Default is to log only in DEBUG builds on .debug log level.
 /// - remark: Don't use this for high performance logging.
 class Logger {
     
@@ -18,7 +18,11 @@ class Logger {
         #endif
     }
     
-    var logLevel: LogLevel = .info
+    #if DEBUG
+        var logLevel: LogLevel = .debug
+    #else
+        var logLevel: LogLevel = .info
+    #endif
     var isLoggingEnabled = false
     
     enum LogLevel: Int {

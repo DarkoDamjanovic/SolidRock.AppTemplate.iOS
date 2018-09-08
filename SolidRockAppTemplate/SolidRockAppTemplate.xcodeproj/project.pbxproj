@@ -685,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 404C54FF4D4ED2CB55E4CCD8 /* Pods-SolidRockAppTemplate.debug.xcconfig */;
 			buildSettings = {
+				API_KEY = 1a9bf897;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://www.omdbapi.com";
 				CODE_SIGN_STYLE = Automatic;
@@ -705,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39A92D8A2DFF936594E127EE /* Pods-SolidRockAppTemplate.release.xcconfig */;
 			buildSettings = {
+				API_KEY = 1a9bf897;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BASE_URL = "http://www.omdbapi.com";
 				CODE_SIGN_STYLE = Automatic;

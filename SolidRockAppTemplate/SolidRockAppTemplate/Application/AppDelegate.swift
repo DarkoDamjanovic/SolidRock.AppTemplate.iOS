@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Launch the UI removeObserver programatically.
     /// This gives us the chance to inject the root dependencies.
     private func launchUI() {
+        let c = Configuration()
         let builder = MoviesBuilder(sharedDependencies: sharedDependencies)
         let viewController = builder.build()
         self.window = UIWindow(frame: UIScreen.main.bounds)
