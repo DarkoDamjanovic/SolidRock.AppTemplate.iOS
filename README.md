@@ -38,7 +38,7 @@ Meanwhile it should be clear to anyone that Singletons are (in most cases) an an
 
 ## Dependency Injection 
 
-Every dependency which is needed by a module is injected by a `Builder` class. Usually dependencies can be created directly by the `Builder` itself. If shared dependencies are needed then also the `Builder` injects it into the module and additionally passed the shared dependencies to the `Router` in turn can use the `SharedDependencies` to inject them into the next `Builder` and so on.  
+Every dependency which is needed by a module is injected by a `Builder` class. Usually dependencies can be created directly by the `Builder` itself. If shared dependencies are needed then also the `Builder` injects it into the module and additionally forwards the shared dependencies to the `Router` in turn can use the `SharedDependencies` to inject them into the next `Builder` and so on.  
 
 ## Protocol oriented loose coupling
 
