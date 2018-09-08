@@ -1,5 +1,5 @@
 # SolidRock AppTemplate for iOS
-This repository should serve as a starting point for new iOS Apps. Don't repeat yourself all the time.
+This repository should serve as a starting point for new iOS Apps. Don't repeat yourself all the time. All themes are handled which are used by 99% of all Apps like Configuration, Networking, Logging, etc.. .
 
 ## Configuration
 
