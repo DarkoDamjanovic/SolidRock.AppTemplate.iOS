@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private let sharedDependencies: SharedDependenciesProtocol = SharedDependencies()
     private let log = Logger()
 
     /// This is the very first entry point of the App.
@@ -32,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    /// Launch the UI by any means programatically.
+    /// Launch the UI removeObserver programatically.
     /// This gives us the chance to inject the root dependencies.
     private func launchUI() {
 //        let builder = InitializationBuilder(sharedDependencies: sharedDependencies)

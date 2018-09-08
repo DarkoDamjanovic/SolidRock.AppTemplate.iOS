@@ -10,10 +10,15 @@
 		32A0ACBE27CE40931D9D6E3F /* Pods_SolidRockAppTemplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476673CF6D8F5FFDDFFB6176 /* Pods_SolidRockAppTemplateUITests.framework */; };
 		600D07178B55005A0BA94694 /* Pods_SolidRockAppTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */; };
 		A2733C182143281B00B990E1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C172143281B00B990E1 /* BaseViewController.swift */; };
+		A2733C202143CC0400B990E1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C1F2143CC0400B990E1 /* Configuration.swift */; };
+		A2733C222143CC7D00B990E1 /* SharedDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C212143CC7D00B990E1 /* SharedDependencies.swift */; };
+		A2733C252143D56500B990E1 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C242143D56500B990E1 /* ConfigurationTests.swift */; };
+		A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C2F2143D8AD00B990E1 /* MoviesBuilder.swift */; };
+		A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C312143D90000B990E1 /* MoviesRouter.swift */; };
+		A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C332143D94000B990E1 /* MoviesPresenter.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
-		A27B80452143062D000020E1 /* SolidRockAppTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */; };
 		A27B80502143062D000020E1 /* SolidRockAppTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */; };
 		A284386B21430A8E0005DE7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284386A21430A8E0005DE7D /* Extensions.swift */; };
 		A284386E21430C0E0005DE7D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284386D21430C0E0005DE7D /* Result.swift */; };
@@ -51,13 +56,22 @@
 		476673CF6D8F5FFDDFFB6176 /* Pods_SolidRockAppTemplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE6961728EDB366B579E317 /* Pods-SolidRockAppTemplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateUITests/Pods-SolidRockAppTemplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2733C172143281B00B990E1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A2733C1F2143CC0400B990E1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A2733C212143CC7D00B990E1 /* SharedDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDependencies.swift; sourceTree = "<group>"; };
+		A2733C242143D56500B990E1 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		A2733C272143D88A00B990E1 /* ModuleTemplatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTemplatePresenter.swift; sourceTree = "<group>"; };
+		A2733C282143D88A00B990E1 /* ModuleTemplateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTemplateRouter.swift; sourceTree = "<group>"; };
+		A2733C292143D88A00B990E1 /* ModuleTemplateBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTemplateBuilder.swift; sourceTree = "<group>"; };
+		A2733C2A2143D88A00B990E1 /* ModuleTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTemplateViewController.swift; sourceTree = "<group>"; };
+		A2733C2F2143D8AD00B990E1 /* MoviesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesBuilder.swift; sourceTree = "<group>"; };
+		A2733C312143D90000B990E1 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
+		A2733C332143D94000B990E1 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27B80392143062D000020E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27B803B2143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27B80402143062D000020E1 /* SolidRockAppTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidRockAppTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidRockAppTemplateTests.swift; sourceTree = "<group>"; };
 		A27B80462143062D000020E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27B804B2143062D000020E1 /* SolidRockAppTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidRockAppTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B804F2143062D000020E1 /* SolidRockAppTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidRockAppTemplateUITests.swift; sourceTree = "<group>"; };
@@ -127,6 +141,17 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
+		A2733C262143D86300B990E1 /* ModuleTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A2733C292143D88A00B990E1 /* ModuleTemplateBuilder.swift */,
+				A2733C272143D88A00B990E1 /* ModuleTemplatePresenter.swift */,
+				A2733C282143D88A00B990E1 /* ModuleTemplateRouter.swift */,
+				A2733C2A2143D88A00B990E1 /* ModuleTemplateViewController.swift */,
+			);
+			path = ModuleTemplate;
+			sourceTree = "<group>";
+		};
 		A27B80232143062B000020E1 = {
 			isa = PBXGroup;
 			children = (
@@ -153,11 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				A28438622143078B0005DE7D /* Application */,
-				A284386C21430BF90005DE7D /* Util */,
 				A2843866214307C80005DE7D /* Resources */,
 				A2843863214307960005DE7D /* Services */,
 				A28438642143079C0005DE7D /* Models */,
 				A2733C1921432B4B00B990E1 /* Reusable */,
+				A284386C21430BF90005DE7D /* Util */,
 				A2843865214307A10005DE7D /* Modules */,
 			);
 			path = SolidRockAppTemplate;
@@ -166,8 +191,8 @@
 		A27B80432143062D000020E1 /* SolidRockAppTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				A27B80442143062D000020E1 /* SolidRockAppTemplateTests.swift */,
 				A27B80462143062D000020E1 /* Info.plist */,
+				A2733C242143D56500B990E1 /* ConfigurationTests.swift */,
 			);
 			path = SolidRockAppTemplateTests;
 			sourceTree = "<group>";
@@ -186,8 +211,10 @@
 			children = (
 				A27B802F2143062B000020E1 /* AppDelegate.swift */,
 				A284386A21430A8E0005DE7D /* Extensions.swift */,
+				A2733C1F2143CC0400B990E1 /* Configuration.swift */,
 				A284387121430EBD0005DE7D /* UserDefaultsKeys.swift */,
 				A2843873214310CC0005DE7D /* NotificationNames.swift */,
+				A2733C212143CC7D00B990E1 /* SharedDependencies.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -210,6 +237,7 @@
 		A2843865214307A10005DE7D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C262143D86300B990E1 /* ModuleTemplate */,
 				A284387521431A7B0005DE7D /* Movies */,
 			);
 			path = Modules;
@@ -244,6 +272,9 @@
 		A284387521431A7B0005DE7D /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C2F2143D8AD00B990E1 /* MoviesBuilder.swift */,
+				A2733C312143D90000B990E1 /* MoviesRouter.swift */,
+				A2733C332143D94000B990E1 /* MoviesPresenter.swift */,
 				A284387621431AB10005DE7D /* MoviesViewController.swift */,
 				A284387821431B0B0005DE7D /* MoviesViewController.storyboard */,
 			);
@@ -476,9 +507,14 @@
 				A284387021430D610005DE7D /* Logger.swift in Sources */,
 				A284386B21430A8E0005DE7D /* Extensions.swift in Sources */,
 				A284386E21430C0E0005DE7D /* Result.swift in Sources */,
+				A2733C222143CC7D00B990E1 /* SharedDependencies.swift in Sources */,
+				A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */,
+				A2733C202143CC0400B990E1 /* Configuration.swift in Sources */,
 				A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */,
 				A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */,
+				A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */,
 				A2733C182143281B00B990E1 /* BaseViewController.swift in Sources */,
+				A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */,
 				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,
 				A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */,
 			);
@@ -488,7 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27B80452143062D000020E1 /* SolidRockAppTemplateTests.swift in Sources */,
+				A2733C252143D56500B990E1 /* ConfigurationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +682,7 @@
 			baseConfigurationReference = 404C54FF4D4ED2CB55E4CCD8 /* Pods-SolidRockAppTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://www.omdbapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/SolidRockAppTemplate/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -665,6 +702,7 @@
 			baseConfigurationReference = 39A92D8A2DFF936594E127EE /* Pods-SolidRockAppTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://www.omdbapi.com";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/SolidRockAppTemplate/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

@@ -8,17 +8,22 @@
 
 import UIKit
 
+protocol MoviesViewProtocol: class {
+    
+}
+
 /// Show a list of movies.
 class MoviesViewController: BaseViewController {
     
-    @IBOutlet weak var tableView: UITableView! {
-        // Separate IBOutlet configuration to didSet
-        didSet {
-            
-        }
-    }
+    @IBOutlet weak var tableView: UITableView!
+    
+    var presenter: MoviesPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+
+extension MoviesViewController: MoviesViewProtocol {
+    
 }

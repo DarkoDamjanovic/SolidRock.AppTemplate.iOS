@@ -39,5 +39,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>BaseURL</key>
+    <string>$(BASE_URL)</string>
 </dict>
 </plist>
