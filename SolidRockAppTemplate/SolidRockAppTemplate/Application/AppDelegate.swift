@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let sharedDependencies: SharedDependenciesProtocol = SharedDependencies()
     private let log = Logger()
 
-    /// This is the very first entry point of the App.
+    /// This is the very first entry point of the App Delegate.
     /// It is called even before didFinishLaunchingWithOptions.
     override init() {
         super.init()
@@ -36,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// Launch the UI removeObserver programatically.
     /// This gives us the chance to inject the root dependencies.
     private func launchUI() {
-        let c = Configuration()
         let builder = MoviesBuilder(sharedDependencies: sharedDependencies)
         let viewController = builder.build()
         self.window = UIWindow(frame: UIScreen.main.bounds)
