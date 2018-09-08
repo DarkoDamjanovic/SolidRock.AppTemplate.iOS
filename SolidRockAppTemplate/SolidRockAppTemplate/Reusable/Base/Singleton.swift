@@ -25,7 +25,7 @@ class Singleton {
             // That's why we do not do this assertion in case of testing.
             // "isUnitTestRunning" is passed as an argument in the Test Profile (in the Xcode build scheme).
             // Arguments passed their are written into UserDefaults, so we can check them here.
-            if UserDefaults.standard.bool(forKey: "isUnitTestRunning") == false {
+            if UserDefaults.standard.bool(forKey: UserDefaultsKeys.isUnitTestRunning.rawValue) == false {
                 Singleton.instances += 1
                 assert(Singleton.instances == 1, "Do not create multiple instances of this class. Get it thru the shared dependencies in your module.")
             }

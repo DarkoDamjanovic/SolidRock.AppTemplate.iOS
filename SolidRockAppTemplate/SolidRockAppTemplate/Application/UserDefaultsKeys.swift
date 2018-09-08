@@ -17,5 +17,6 @@ enum UserDefaultsKeys: String {
     // Do not change or remove this keys as it will break backwards compatibility. Just add new ones as needed.
     // By declaring this as enum the compiler checks for uniqueness.
     case userDefaultsInitialized
+    case isUnitTestRunning
 }
 
