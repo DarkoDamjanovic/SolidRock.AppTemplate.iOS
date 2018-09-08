@@ -20,6 +20,9 @@
 		A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C382143F69A00B990E1 /* AppNavigationController.swift */; };
 		A2733C3C21441E3700B990E1 /* UIColor+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C3B21441E3700B990E1 /* UIColor+Customization.swift */; };
 		A2733C3F2144254300B990E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2733C412144254300B990E1 /* Localizable.strings */; };
+		A2733C44214459A300B990E1 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C43214459A300B990E1 /* WebService.swift */; };
+		A2733C46214459B000B990E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C45214459B000B990E1 /* ApiClient.swift */; };
+		A2733C482144621E00B990E1 /* AsyncNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
@@ -75,6 +78,9 @@
 		A2733C3B21441E3700B990E1 /* UIColor+Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Customization.swift"; sourceTree = "<group>"; };
 		A2733C402144254300B990E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A2733C422144255700B990E1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2733C43214459A300B990E1 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A2733C45214459B000B990E1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncNetworkTask.swift; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -285,6 +291,9 @@
 		A2843867214308320005DE7D /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C43214459A300B990E1 /* WebService.swift */,
+				A2733C45214459B000B990E1 /* ApiClient.swift */,
+				A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -539,17 +548,20 @@
 				A2733C362143EE8500B990E1 /* Singleton.swift in Sources */,
 				A284386B21430A8E0005DE7D /* Extensions.swift in Sources */,
 				A284386E21430C0E0005DE7D /* Result.swift in Sources */,
+				A2733C44214459A300B990E1 /* WebService.swift in Sources */,
 				A2733C222143CC7D00B990E1 /* SharedDependencies.swift in Sources */,
 				A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */,
 				A2733C202143CC0400B990E1 /* Configuration.swift in Sources */,
 				A2733C3C21441E3700B990E1 /* UIColor+Customization.swift in Sources */,
 				A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */,
 				A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */,
+				A2733C46214459B000B990E1 /* ApiClient.swift in Sources */,
 				A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */,
 				A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */,
 				A2733C182143281B00B990E1 /* BaseViewController.swift in Sources */,
 				A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */,
 				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,
+				A2733C482144621E00B990E1 /* AsyncNetworkTask.swift in Sources */,
 				A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
