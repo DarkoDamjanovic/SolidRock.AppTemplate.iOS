@@ -37,8 +37,6 @@ class ApiClient {
     private var timeoutUpload: TimeInterval = 10.0
     private var timeoutImageDownload: TimeInterval = 60.0
     private var timeoutImageUpload: TimeInterval = 60.0
-    
-    let baseURL: URL
     private let log = Logger()
     
     private var session: URLSession
@@ -51,8 +49,7 @@ class ApiClient {
         return headers
     }
     
-    init(baseURL: URL) {
-        self.baseURL = baseURL
+    init() {
         self.session = URLSession(configuration: URLSessionConfiguration.default)
     }
     

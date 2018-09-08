@@ -23,6 +23,8 @@
 		A2733C44214459A300B990E1 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C43214459A300B990E1 /* WebService.swift */; };
 		A2733C46214459B000B990E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C45214459B000B990E1 /* ApiClient.swift */; };
 		A2733C482144621E00B990E1 /* AsyncNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */; };
+		A2733C4A21446B8600B990E1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C4921446B8600B990E1 /* Movie.swift */; };
+		A2733C4C21446D9400B990E1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C4B21446D9400B990E1 /* SearchResult.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
@@ -81,6 +83,8 @@
 		A2733C43214459A300B990E1 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A2733C45214459B000B990E1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncNetworkTask.swift; sourceTree = "<group>"; };
+		A2733C4921446B8600B990E1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A2733C4B21446D9400B990E1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 		A28438642143079C0005DE7D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C4921446B8600B990E1 /* Movie.swift */,
+				A2733C4B21446D9400B990E1 /* SearchResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -545,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A284387021430D610005DE7D /* Logger.swift in Sources */,
+				A2733C4C21446D9400B990E1 /* SearchResult.swift in Sources */,
 				A2733C362143EE8500B990E1 /* Singleton.swift in Sources */,
 				A284386B21430A8E0005DE7D /* Extensions.swift in Sources */,
 				A284386E21430C0E0005DE7D /* Result.swift in Sources */,
@@ -558,6 +565,7 @@
 				A2733C46214459B000B990E1 /* ApiClient.swift in Sources */,
 				A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */,
 				A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */,
+				A2733C4A21446B8600B990E1 /* Movie.swift in Sources */,
 				A2733C182143281B00B990E1 /* BaseViewController.swift in Sources */,
 				A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */,
 				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,

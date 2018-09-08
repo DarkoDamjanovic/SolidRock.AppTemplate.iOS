@@ -10,6 +10,7 @@ import Foundation
 
 protocol ConfigurationProtocol {
     var baseURL: URL { get }
+    var apiKey: String { get }
 }
 
 /// Holds all the App configuration loaded from the Info.plist.

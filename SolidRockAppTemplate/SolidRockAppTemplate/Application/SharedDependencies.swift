@@ -18,7 +18,7 @@ protocol SharedDependenciesProtocol {
 // It doesn't matter which dependency is loaded first, it will automatically create all it's needed dependencies here and they will be injected.
 class SharedDependencies: SharedDependenciesProtocol {
     private(set) lazy var configuration: ConfigurationProtocol = Configuration()
-    private(set) lazy var webService: WebServiceProtocol = WebService(baseURL: self.configuration.baseURL)
+    private(set) lazy var webService: WebServiceProtocol = WebService(baseURL: self.configuration.baseURL, apiKey: self.configuration.apiKey)
 }
 
 
