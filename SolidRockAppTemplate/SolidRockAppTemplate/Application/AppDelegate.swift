@@ -38,8 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func launchUI() {
         let builder = MoviesBuilder(sharedDependencies: sharedDependencies)
         let viewController = builder.build()
+        let navigationController = AppNavigationController(rootViewController: viewController)
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window!.rootViewController = viewController
+        self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()
     }
 }

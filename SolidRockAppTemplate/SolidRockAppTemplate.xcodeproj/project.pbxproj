@@ -18,6 +18,7 @@
 		A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C332143D94000B990E1 /* MoviesPresenter.swift */; };
 		A2733C362143EE8500B990E1 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C352143EE8500B990E1 /* Singleton.swift */; };
 		A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C382143F69A00B990E1 /* AppNavigationController.swift */; };
+		A2733C3C21441E3700B990E1 /* UIColor+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C3B21441E3700B990E1 /* UIColor+Customization.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
@@ -70,6 +71,7 @@
 		A2733C332143D94000B990E1 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
 		A2733C352143EE8500B990E1 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		A2733C382143F69A00B990E1 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		A2733C3B21441E3700B990E1 /* UIColor+Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Customization.swift"; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		A2733C1921432B4B00B990E1 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C3A21441E1E00B990E1 /* Colors */,
 				A2733C372143F67F00B990E1 /* NavigationController */,
 				A2733C16214327FD00B990E1 /* Base */,
 			);
@@ -164,6 +167,14 @@
 				A2733C382143F69A00B990E1 /* AppNavigationController.swift */,
 			);
 			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		A2733C3A21441E1E00B990E1 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				A2733C3B21441E3700B990E1 /* UIColor+Customization.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		A27B80232143062B000020E1 = {
@@ -525,6 +536,7 @@
 				A2733C222143CC7D00B990E1 /* SharedDependencies.swift in Sources */,
 				A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */,
 				A2733C202143CC0400B990E1 /* Configuration.swift in Sources */,
+				A2733C3C21441E3700B990E1 /* UIColor+Customization.swift in Sources */,
 				A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */,
 				A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */,
 				A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */,
