@@ -7,13 +7,13 @@ The App configures itself thru the Info.plist file. The Info.plist file has a sp
 
 ## MVP - Model View Presenter
 
-The Model View Presenter is used with an additional Builder and Router class. 
+The App uses the MVP - Model View Presenter architecture pattern. Additionaly a Builder and Router class is created. 
 
 * Builder
 
-   The Builder is used to create the module and to inject all neded dependencies
+   The Builder is used to create the module and to inject all needed dependencies.
 
 * Router 
 
-   The Router handles all the navigation use-cases between views and passes the shared dependencies from one module into the other. In this way only the really needed dependencies are injected. 
+   The Router handles all the navigation use-cases between views and passes the shared dependencies from one module into the other. In this way only the really needed dependencies are injected into the presenter and view. 
 
