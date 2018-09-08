@@ -52,7 +52,7 @@ One of the advandages of loose coupling is that Mock classes can be injected dur
 
 Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to open instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
 
-   let viewController = MoviesViewController.storyboardInstance()
+    let viewController = MoviesViewController.storyboardInstance()
 
 
 
