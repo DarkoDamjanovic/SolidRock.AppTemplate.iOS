@@ -1,5 +1,8 @@
+![SolidRock](https://github.com/DarkoDamjanovic/SolidRock.AppTemplate.iOS/edit/master/solidrock.jpg "SolidRock")
+
 # SolidRock AppTemplate for iOS
-This repository should serve as a starting point for new iOS Apps. Don't repeat yourself all the time. All themes are handled which are used by 99% of all Apps like Configuration, Networking, Logging, etc.. .
+
+This repository should serve as a starting point for new iOS Apps. Don't repeat yourself all the time. All themes are handled which are used by 99% of all Apps like Configuration, Networking, Logging, etc.. . If you are a beginner iOS developer then you can use this if you are not sure how to structure your App. If you are an advanced iOS developer then let be inspired - maybe you will find something which complements you current workflow.
 
 ## Configuration
 
@@ -45,7 +48,11 @@ Every dependency is injected as a protocol, never the concrete implementation it
 
 One of the advandages of loose coupling is that Mock classes can be injected during Unit Tests. Which in turn enables complete testability for presentation and business logic. The view classes itself are not unit tested, they are just a "dumb" breakdown of UI setters or input use cases. It's the job of the creators of those classes to test them. (in this case Apples UIKit team) Also the `Builder` and `Router` are not unit tested specifically. (just in special cases)
 
+## Storyboards
 
+Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to open instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
+
+   let viewController = MoviesViewController.storyboardInstance()
 
 
 
