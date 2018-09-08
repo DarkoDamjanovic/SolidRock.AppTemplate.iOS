@@ -16,6 +16,7 @@
 		A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C2F2143D8AD00B990E1 /* MoviesBuilder.swift */; };
 		A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C312143D90000B990E1 /* MoviesRouter.swift */; };
 		A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C332143D94000B990E1 /* MoviesPresenter.swift */; };
+		A2733C362143EE8500B990E1 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C352143EE8500B990E1 /* Singleton.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
 		A27B80372143062D000020E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27B80362143062D000020E1 /* Assets.xcassets */; };
 		A27B803A2143062D000020E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27B80382143062D000020E1 /* LaunchScreen.storyboard */; };
@@ -66,6 +67,7 @@
 		A2733C2F2143D8AD00B990E1 /* MoviesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesBuilder.swift; sourceTree = "<group>"; };
 		A2733C312143D90000B990E1 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
 		A2733C332143D94000B990E1 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
+		A2733C352143EE8500B990E1 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27B802F2143062B000020E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27B80362143062D000020E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		A2733C16214327FD00B990E1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A2733C352143EE8500B990E1 /* Singleton.swift */,
 				A2733C172143281B00B990E1 /* BaseViewController.swift */,
 			);
 			path = Base;
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A284387021430D610005DE7D /* Logger.swift in Sources */,
+				A2733C362143EE8500B990E1 /* Singleton.swift in Sources */,
 				A284386B21430A8E0005DE7D /* Extensions.swift in Sources */,
 				A284386E21430C0E0005DE7D /* Result.swift in Sources */,
 				A2733C222143CC7D00B990E1 /* SharedDependencies.swift in Sources */,
@@ -712,6 +716,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.apptemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -732,6 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TEST";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidRockAppTemplate.app/SolidRockAppTemplate";
@@ -753,6 +759,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TEST RELEASE";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolidRockAppTemplate.app/SolidRockAppTemplate";
@@ -773,6 +780,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "UITEST TEST DEBUG";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SolidRockAppTemplate;
@@ -793,6 +801,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.solidrock.SolidRockAppTemplateUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "RELEASE UITEST TEST";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SolidRockAppTemplate;
