@@ -20,12 +20,15 @@ class Singleton {
     
     private func assertSingletonInstance() {
         #if DEBUG
-            /// It is allowed and recommended to instantiate multiple instances of this class in UnitTests.
+            // It is allowed and recommended to instantiate multiple instances of this class in UnitTests.
+            // In this way we can test the Singelton without the problems of shared state.
             // That's why we do not do this assertion in case of testing.
-            #if !TEST
+            // "isUnitTestRunning" is passed as an argument in the Test Profile (in the Xcode build scheme).
+            // Arguments passed their are written into UserDefaults, so we can check them here.
+            if UserDefaults.standard.bool(forKey: "isUnitTestRunning") == false {
                 Singleton.instances += 1
                 assert(Singleton.instances == 1, "Do not create multiple instances of this class. Get it thru the shared dependencies in your module.")
-            #endif
+            }
         #endif
     }
 }   

@@ -19,8 +19,17 @@ class MoviesViewController: BaseViewController {
     
     var presenter: MoviesPresenterProtocol!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.navigationItem.title = "movies.title".localized
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    private func setupUI() {
+        
     }
 }
 

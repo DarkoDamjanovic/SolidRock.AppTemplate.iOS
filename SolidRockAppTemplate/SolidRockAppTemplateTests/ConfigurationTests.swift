@@ -25,4 +25,9 @@ class ConfigurationTests: XCTestCase {
         let config = Configuration()
         XCTAssert(config.baseURL.absoluteString == "http://www.omdbapi.com")
     }
+    
+    func testApiKey() {
+        let config = Configuration()
+        XCTAssert(config.apiKey == "1a9bf897")
+    }
 }

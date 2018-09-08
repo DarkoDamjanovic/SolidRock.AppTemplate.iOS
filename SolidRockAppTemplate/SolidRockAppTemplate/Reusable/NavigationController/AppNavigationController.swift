@@ -22,6 +22,8 @@ class AppNavigationController: UINavigationController {
     
     private func setupUI() {
         self.navigationBar.tintColor = UIColor.appTintColor
-        self.navigationBar.prefersLargeTitles = true 
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.appTintColor]
+        self.navigationBar.prefersLargeTitles = true
+        self.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.appTintColor]
     }
 }

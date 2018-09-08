@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SolidRockAppTemplate
+
+  Created by Darko Damjanovic on 08.09.18.
+  Copyright © 2018 SolidRock. All rights reserved.
+*/
+
+
+// MoviesViewController
+
+"movies.title" = "Filme";
