@@ -10,7 +10,7 @@ import Foundation
 
 struct SearchResult: Codable {
     let movies: [Movie]
-    let totalResults: Int
+    let totalResults: String
     let reponse: String
     
     enum CodingKeys: String, CodingKey {
@@ -22,7 +22,7 @@ struct SearchResult: Codable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         movies = try values.decode([Movie].self, forKey: .movies)
-        totalResults = try values.decode(Int.self, forKey: .totalResults)
+        totalResults = try values.decode(String.self, forKey: .totalResults)
         reponse = try values.decode(String.self, forKey: .reponse)
     }
 }

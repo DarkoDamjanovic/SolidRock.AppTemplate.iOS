@@ -9,18 +9,27 @@
 import Foundation
 
 protocol MoviesPresenterProtocol {
-
+    func viewDidAppear()
+    var movies: [Movie] { get }
+    var searchTerm: String { get set }
+    func didSelectRowAt(indexPath: IndexPath)
 }
 
 class MoviesPresenter {
     private let log = Logger()
     private unowned let view: MoviesViewProtocol
     private let router: MoviesRouterProtocol
+    private let webService: WebServiceProtocol
 
+    private(set) var movies = [Movie]()
     
-    init(view: MoviesViewProtocol, router: MoviesRouterProtocol) {
+    // Initial search is Batman (hardcoded, not nice, just for demonstration)
+    var searchTerm = "Batman"
+    
+    init(view: MoviesViewProtocol, router: MoviesRouterProtocol, webService: WebServiceProtocol) {
         self.view = view
         self.router = router
+        self.webService = webService
     }
     
     deinit {
@@ -29,5 +38,25 @@ class MoviesPresenter {
 }
 
 extension MoviesPresenter: MoviesPresenterProtocol {
-
+    func viewDidAppear() {
+        webService.getSearchResult(searchTerm: self.searchTerm, page: 1) { [weak self] (result) in
+            guard let strongSelf = self else { return }
+            switch result {
+            case .success(let searchResult):
+                strongSelf.movies = searchResult.movies
+                strongSelf.view.reloadDataSource()
+            case .failure(let error):
+                // TODO: error handling
+                strongSelf.log.error(error)
+            }
+        }
+    }
+    
+    func didSelectRowAt(indexPath: IndexPath) {
+        view.deselectRowAt(indexPath: indexPath, animated: true)
+    }
 }
+
+
+
+

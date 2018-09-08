@@ -9,7 +9,7 @@
 import Foundation
 
 protocol WebServiceProtocol {
-    func getSearchResult(params: [String: String], completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask?
+    @discardableResult func getSearchResult(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask?
 }
 
 class WebService: WebServiceProtocol {
@@ -28,12 +28,10 @@ class WebService: WebServiceProtocol {
         self.apiClient = ApiClient()
     }
     
-    @discardableResult func getSearchResult(params: [String: String], completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask? {
-        guard params.count > 0 else {
-            completion(Result.failure(WebServiceError.invalidArguments))
-            return nil
-        }
-        var params = params
+    @discardableResult func getSearchResult(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask? {
+        var params = [String: String]()
+        params["s"] = searchTerm
+        params["page"] = String(page)
         params["apikey"] = self.apiKey
         return apiClient.get(url: self.baseURL, params: params, headers: apiClient.defaultHeaders, completion: completion)
     }
