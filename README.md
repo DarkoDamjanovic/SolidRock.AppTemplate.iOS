@@ -48,6 +48,10 @@ Every dependency is injected as a protocol, never the concrete implementation it
 
 One of the advandages of loose coupling is that Mock classes can be injected during Unit Tests. Which in turn enables complete testability for presentation and business logic. The view classes itself are not unit tested, they are just a "dumb" breakdown of UI setters or input use cases. It's the job of the creators of those classes to test them. (in this case Apples UIKit team) Also the `Builder` and `Router` are not unit tested specifically. (just in special cases)
 
+This approach leads to a possible code coverage of 100% at unit testing for all presentation logic and business logic.
+
+![SolidRock](https://github.com/DarkoDamjanovic/SolidRock.AppTemplate.iOS/blob/master/codecoverage.png "SolidRock")
+
 ## Storyboards
 
 Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
