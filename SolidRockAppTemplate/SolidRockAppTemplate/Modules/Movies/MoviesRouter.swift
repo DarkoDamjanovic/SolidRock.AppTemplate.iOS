@@ -9,7 +9,7 @@
 import Foundation
 
 protocol MoviesRouterProtocol {
-    
+    func navigateToMovieDetail(imdbID: String)
 }
 
 class MoviesRouter {
@@ -28,5 +28,9 @@ class MoviesRouter {
 }
 
 extension MoviesRouter: MoviesRouterProtocol {
-    
+    func navigateToMovieDetail(imdbID: String) {
+        let builder = MovieDetailBuilder(sharedDependencies: sharedDependencies, imdbID: imdbID)
+        let viewController = builder.build()
+        view.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

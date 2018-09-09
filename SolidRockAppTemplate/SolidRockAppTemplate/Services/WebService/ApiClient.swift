@@ -39,6 +39,8 @@ class ApiClient {
     private var timeoutImageUpload: TimeInterval = 60.0
     private let log = Logger()
     
+    // TODO: other HTTP methods
+    
     private var session: URLSession
     
     // The default headers sent with most requests

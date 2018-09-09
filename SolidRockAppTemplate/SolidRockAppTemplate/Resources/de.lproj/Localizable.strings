@@ -6,7 +6,8 @@
   Copyright © 2018 SolidRock. All rights reserved.
 */
 
-
 // MoviesViewController
-
 "movies.title" = "Filme";
+
+// MovieDetailViewController
+"moviedetail.title" = "Film Details";

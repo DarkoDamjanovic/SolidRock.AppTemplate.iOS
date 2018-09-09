@@ -12,7 +12,10 @@ protocol MoviesPresenterProtocol {
     func viewDidAppear()
     var movies: [Movie] { get }
     var searchTerm: String { get set }
+    var numberOfRows: Int { get }
+    var viewTitle: String { get }
     func didSelectRowAt(indexPath: IndexPath)
+    func presenterForRowAt(indexPath: IndexPath) -> MovieListTableViewCellPresenterProtocol?
 }
 
 class MoviesPresenter {
@@ -38,6 +41,14 @@ class MoviesPresenter {
 }
 
 extension MoviesPresenter: MoviesPresenterProtocol {
+    var viewTitle: String {
+        return "movies.title".localized
+    }
+    
+    var numberOfRows: Int {
+        return movies.count
+    }
+    
     func viewDidAppear() {
         movieService.searchMovies(searchTerm: self.searchTerm, page: 1) { [weak self] (result) in
             guard let strongSelf = self else { return }
@@ -54,6 +65,18 @@ extension MoviesPresenter: MoviesPresenterProtocol {
     
     func didSelectRowAt(indexPath: IndexPath) {
         view.deselectRowAt(indexPath: indexPath, animated: true)
+        if movies.indices.contains(indexPath.row) {
+            let movie = movies[indexPath.row]
+            router.navigateToMovieDetail(imdbID: movie.imdbId)
+        }
+    }
+    
+    func presenterForRowAt(indexPath: IndexPath) -> MovieListTableViewCellPresenterProtocol? {
+        if movies.indices.contains(indexPath.row) {
+            return MovieListTableViewCellPresenter(movie: movies[indexPath.row])
+        } else {
+            return nil
+        }
     }
 }
 

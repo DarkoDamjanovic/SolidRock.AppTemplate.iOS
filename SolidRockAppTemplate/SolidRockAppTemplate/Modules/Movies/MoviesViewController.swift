@@ -19,11 +19,6 @@ class MoviesViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: MoviesPresenterProtocol!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.navigationItem.title = "movies.title".localized
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -35,6 +30,8 @@ class MoviesViewController: BaseViewController {
     }
     
     private func setup() {
+        self.title = presenter.viewTitle
+        tableView.register(UINib(nibName: "MovieListTableViewCell", bundle: nil), forCellReuseIdentifier: "MovieListTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -52,20 +49,14 @@ extension MoviesViewController: MoviesViewProtocol {
 }
 
 extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.movies.count
+        return presenter.numberOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if presenter.movies.indices.contains(indexPath.row) {
-            let movie = presenter.movies[indexPath.row]
-            cell.textLabel?.text = movie.title
-            cell.detailTextLabel?.text = movie.year
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListTableViewCell", for: indexPath) as! MovieListTableViewCell
+        if let cellPresenter = presenter.presenterForRowAt(indexPath: indexPath) {
+            cell.configure(presenter: cellPresenter)
         }
         return cell
     }
