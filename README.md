@@ -42,7 +42,7 @@ Every dependency which is needed by a module is injected by a `Builder` class. U
 
 ## Protocol oriented loose coupling
 
-Every dependency is injected as a protocol, never the concrete implementation itself. In this way loose coupling is assured thru the whole App. In this way we gain all the advantages of loose coupling. 
+Every dependency is injected as a protocol, never the concrete implementation itself. In this way [loose coupling](https://en.wikipedia.org/wiki/Loose_coupling) is assured thru the whole App. 
 
 ## Testing
 
@@ -54,7 +54,7 @@ This approach leads to a possible code coverage of 100% at unit testing for all 
 
 ## Storyboards
 
-Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
+Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developers work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
 
     let viewController = MoviesViewController.storyboardInstance()
 
