@@ -22,7 +22,7 @@
 		A2733C3F2144254300B990E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2733C412144254300B990E1 /* Localizable.strings */; };
 		A2733C44214459A300B990E1 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C43214459A300B990E1 /* WebService.swift */; };
 		A2733C46214459B000B990E1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C45214459B000B990E1 /* ApiClient.swift */; };
-		A2733C482144621E00B990E1 /* AsyncNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */; };
+		A2733C482144621E00B990E1 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C472144621E00B990E1 /* AsyncTask.swift */; };
 		A2733C4A21446B8600B990E1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C4921446B8600B990E1 /* Movie.swift */; };
 		A2733C4C21446D9400B990E1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2733C4B21446D9400B990E1 /* SearchResult.swift */; };
 		A27B80302143062B000020E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B802F2143062B000020E1 /* AppDelegate.swift */; };
@@ -36,6 +36,8 @@
 		A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2843873214310CC0005DE7D /* NotificationNames.swift */; };
 		A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284387621431AB10005DE7D /* MoviesViewController.swift */; };
 		A284387921431B0B0005DE7D /* MoviesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A284387821431B0B0005DE7D /* MoviesViewController.storyboard */; };
+		A28F881D214520040078036A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F881C214520040078036A /* MovieService.swift */; };
+		A28F881F2145239E0078036A /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F881E2145239E0078036A /* MovieDetail.swift */; };
 		B12A0E7555FB23CD60F18E54 /* Pods_SolidRockAppTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F060E537C10A244788DF88 /* Pods_SolidRockAppTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +84,7 @@
 		A2733C422144255700B990E1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A2733C43214459A300B990E1 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A2733C45214459B000B990E1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncNetworkTask.swift; sourceTree = "<group>"; };
+		A2733C472144621E00B990E1 /* AsyncTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
 		A2733C4921446B8600B990E1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A2733C4B21446D9400B990E1 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		A27B802C2143062B000020E1 /* SolidRockAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolidRockAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,8 @@
 		A2843873214310CC0005DE7D /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 		A284387621431AB10005DE7D /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		A284387821431B0B0005DE7D /* MoviesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviesViewController.storyboard; sourceTree = "<group>"; };
+		A28F881C214520040078036A /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		A28F881E2145239E0078036A /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF54DA05D80BD0B8352F3D3 /* Pods-SolidRockAppTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateTests/Pods-SolidRockAppTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +264,7 @@
 		A2843863214307960005DE7D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A28F881B21451FF00078036A /* MovieService */,
 				A2843867214308320005DE7D /* WebService */,
 			);
 			path = Services;
@@ -269,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				A2733C4921446B8600B990E1 /* Movie.swift */,
+				A28F881E2145239E0078036A /* MovieDetail.swift */,
 				A2733C4B21446D9400B990E1 /* SearchResult.swift */,
 			);
 			path = Models;
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				A284387521431A7B0005DE7D /* Movies */,
+				A28F881A21451F020078036A /* MovieDetail */,
 				A2733C262143D86300B990E1 /* ModuleTemplate */,
 			);
 			path = Modules;
@@ -299,7 +306,7 @@
 			children = (
 				A2733C43214459A300B990E1 /* WebService.swift */,
 				A2733C45214459B000B990E1 /* ApiClient.swift */,
-				A2733C472144621E00B990E1 /* AsyncNetworkTask.swift */,
+				A2733C472144621E00B990E1 /* AsyncTask.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -323,6 +330,21 @@
 				A284387821431B0B0005DE7D /* MoviesViewController.storyboard */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		A28F881A21451F020078036A /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		A28F881B21451FF00078036A /* MovieService */ = {
+			isa = PBXGroup;
+			children = (
+				A28F881C214520040078036A /* MovieService.swift */,
+			);
+			path = MovieService;
 			sourceTree = "<group>";
 		};
 		DE018875D71E9A43FC74E6C3 /* Pods */ = {
@@ -560,16 +582,18 @@
 				A2733C302143D8AD00B990E1 /* MoviesBuilder.swift in Sources */,
 				A2733C202143CC0400B990E1 /* Configuration.swift in Sources */,
 				A2733C3C21441E3700B990E1 /* UIColor+Customization.swift in Sources */,
+				A28F881D214520040078036A /* MovieService.swift in Sources */,
 				A2843874214310CC0005DE7D /* NotificationNames.swift in Sources */,
 				A284387221430EBD0005DE7D /* UserDefaultsKeys.swift in Sources */,
 				A2733C46214459B000B990E1 /* ApiClient.swift in Sources */,
 				A2733C392143F69A00B990E1 /* AppNavigationController.swift in Sources */,
 				A2733C342143D94000B990E1 /* MoviesPresenter.swift in Sources */,
+				A28F881F2145239E0078036A /* MovieDetail.swift in Sources */,
 				A2733C4A21446B8600B990E1 /* Movie.swift in Sources */,
 				A2733C182143281B00B990E1 /* BaseViewController.swift in Sources */,
 				A2733C322143D90000B990E1 /* MoviesRouter.swift in Sources */,
 				A27B80302143062B000020E1 /* AppDelegate.swift in Sources */,
-				A2733C482144621E00B990E1 /* AsyncNetworkTask.swift in Sources */,
+				A2733C482144621E00B990E1 /* AsyncTask.swift in Sources */,
 				A284387721431AB10005DE7D /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

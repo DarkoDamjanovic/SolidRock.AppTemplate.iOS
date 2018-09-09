@@ -19,7 +19,8 @@ class MoviesBuilder {
     func build() -> MoviesViewController {
         let view = MoviesViewController.storyboardInstance()
         let router = MoviesRouter(view: view, sharedDependencies: sharedDependencies)
-        let presenter = MoviesPresenter(view: view, router: router, webService: sharedDependencies.webService)
+        let movieService = MovieService(webService: sharedDependencies.webService)
+        let presenter = MoviesPresenter(view: view, router: router, movieService: movieService)
         view.presenter = presenter
         return view
     }

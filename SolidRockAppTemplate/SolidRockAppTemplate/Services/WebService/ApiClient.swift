@@ -59,7 +59,7 @@ class ApiClient {
     /// - parameter retryCount: How often the request should be retried on possible errors.
     /// - parameter completion: The completion handler. Either resolved with valid data or an error.
     ///                         HTTP status code which are outside the range 100-399 also complete as an error.
-    @discardableResult private func performNetworkRequest(request: URLRequest, retryCount: Int, completion: @escaping (Result<Data>) -> ()) -> AsyncNetworkTask {
+    @discardableResult private func performNetworkRequest(request: URLRequest, retryCount: Int, completion: @escaping (Result<Data>) -> ()) -> AsyncTask {
         // Show the network loading indicator
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
@@ -117,7 +117,7 @@ class ApiClient {
         }
         
         dataTask.resume()
-        return AsyncNetworkTask(dataTask: dataTask)
+        return AsyncTask(dataTask: dataTask)
     }
     
     func createUploadUrlRequest<T: Encodable>(url: URL,
@@ -204,8 +204,8 @@ class ApiClient {
     func get<T: Decodable>(url: URL,
                            params: [String: String]?,
                            headers: [String: String]?,
-                           completion: @escaping(Result<T>) -> ()) -> AsyncNetworkTask? {
-        var task: AsyncNetworkTask?
+                           completion: @escaping(Result<T>) -> ()) -> AsyncTask? {
+        var task: AsyncTask?
         do {
             let request = try createGetUrlRequest(url: url,
                                                   params: params,
@@ -243,7 +243,7 @@ class ApiClient {
                            params: [String: String]?,
                            headers: [String: String]?,
                            uploadObject: T?,
-                           completion: @escaping (Error?)->()) -> AsyncNetworkTask? {
+                           completion: @escaping (Error?)->()) -> AsyncTask? {
         return send(url: url,
                     params: params,
                     headers: headers,
@@ -257,7 +257,7 @@ class ApiClient {
                            params: [String: String]?,
                            headers: [String: String]?,
                            uploadObject: T?,
-                           completion: @escaping (Error?)->()) -> AsyncNetworkTask? {
+                           completion: @escaping (Error?)->()) -> AsyncTask? {
         return send(url: url,
                     params: params,
                     headers: headers,
@@ -272,8 +272,8 @@ class ApiClient {
                                     headers: [String: String]?,
                                     uploadObject: T?,
                                     httpMethod: HTTPMethod,
-                                    completion: @escaping (Error?)->()) -> AsyncNetworkTask? {
-        var task: AsyncNetworkTask?
+                                    completion: @escaping (Error?)->()) -> AsyncTask? {
+        var task: AsyncTask?
         do {
             let request = try createUploadUrlRequest(url: url,
                                                      params: params,

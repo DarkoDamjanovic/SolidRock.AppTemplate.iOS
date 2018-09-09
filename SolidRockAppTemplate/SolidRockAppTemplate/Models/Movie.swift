@@ -14,10 +14,18 @@ struct Movie: Codable {
         case movie
         case series
         case episode
+        case game
         
         init(from decoder: Decoder) throws {
-            let label = try decoder.singleValueContainer().decode(String.self)
-            self = MovieType(rawValue: label) ?? .invalid
+            let rawValue = try decoder.singleValueContainer().decode(String.self)
+            // It could be possible that the backend in future extends this enum.
+            // Handle the case when the enum is not possible to parse.
+            // Otherwise it would throw
+            if let movieType = MovieType(rawValue: rawValue) {
+                self = movieType
+            } else {
+                self = .invalid
+            }
         }
     }
     

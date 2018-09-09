@@ -1,5 +1,5 @@
 //
-//  AsyncNetworkTask.swift
+//  AsyncTask.swift
 //  SolidRockAppTemplate
 //
 //  Created by Darko Damjanovic on 08.09.18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class AsyncNetworkTask {
+final class AsyncTask {
     private let dataTask: URLSessionDataTask
     
     init(dataTask: URLSessionDataTask) {

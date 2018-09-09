@@ -19,17 +19,17 @@ class MoviesPresenter {
     private let log = Logger()
     private unowned let view: MoviesViewProtocol
     private let router: MoviesRouterProtocol
-    private let webService: WebServiceProtocol
+    private let movieService: MovieServiceProtocol
 
     private(set) var movies = [Movie]()
     
     // Initial search is Batman (hardcoded, not nice, just for demonstration)
     var searchTerm = "Batman"
     
-    init(view: MoviesViewProtocol, router: MoviesRouterProtocol, webService: WebServiceProtocol) {
+    init(view: MoviesViewProtocol, router: MoviesRouterProtocol, movieService: MovieServiceProtocol) {
         self.view = view
         self.router = router
-        self.webService = webService
+        self.movieService = movieService
     }
     
     deinit {
@@ -39,11 +39,11 @@ class MoviesPresenter {
 
 extension MoviesPresenter: MoviesPresenterProtocol {
     func viewDidAppear() {
-        webService.getSearchResult(searchTerm: self.searchTerm, page: 1) { [weak self] (result) in
+        movieService.searchMovies(searchTerm: self.searchTerm, page: 1) { [weak self] (result) in
             guard let strongSelf = self else { return }
             switch result {
-            case .success(let searchResult):
-                strongSelf.movies = searchResult.movies
+            case .success(let movies):
+                strongSelf.movies = movies
                 strongSelf.view.reloadDataSource()
             case .failure(let error):
                 // TODO: error handling

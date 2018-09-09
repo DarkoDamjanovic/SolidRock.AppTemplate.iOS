@@ -9,7 +9,8 @@
 import Foundation
 
 protocol WebServiceProtocol {
-    @discardableResult func getSearchResult(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask?
+    @discardableResult func search(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncTask?
+    @discardableResult func getMovieDetail(imdbID: String, completion: @escaping (Result<MovieDetail>) -> ()) -> AsyncTask?
 }
 
 class WebService: WebServiceProtocol {
@@ -28,10 +29,17 @@ class WebService: WebServiceProtocol {
         self.apiClient = ApiClient()
     }
     
-    @discardableResult func getSearchResult(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncNetworkTask? {
+    @discardableResult func search(searchTerm: String, page: Int, completion: @escaping (Result<SearchResult>) -> ()) -> AsyncTask? {
         var params = [String: String]()
         params["s"] = searchTerm
         params["page"] = String(page)
+        params["apikey"] = self.apiKey
+        return apiClient.get(url: self.baseURL, params: params, headers: apiClient.defaultHeaders, completion: completion)
+    }
+    
+    @discardableResult func getMovieDetail(imdbID: String, completion: @escaping (Result<MovieDetail>) -> ()) -> AsyncTask? {
+        var params = [String: String]()
+        params["i"] = imdbID
         params["apikey"] = self.apiKey
         return apiClient.get(url: self.baseURL, params: params, headers: apiClient.defaultHeaders, completion: completion)
     }
