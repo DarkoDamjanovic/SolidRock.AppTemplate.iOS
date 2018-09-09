@@ -62,8 +62,9 @@ Networking is done with NSURLSession, not with Alamofire. For most cases NSURLSe
 
 Cocoapods is the de-facto package manager for iOS. Most available 3rd party libraries are integrated into iOS projects over Cocoapods. There is no real need for Cocoapods in this small sample App but for the sake of demonstration the famous SDWebImage is included for downloading and caching images.
 
+## Contributing
 
-I am open for discussion, please post issues or do pull requests. I am happy to get new input and would like to improve this App template over time.
+I am open for discussion, please post issues or add pull requests to this repository. I am happy to get new input and would like to improve this App template over time.
 
 
 
