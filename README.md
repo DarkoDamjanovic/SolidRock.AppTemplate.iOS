@@ -50,9 +50,20 @@ One of the advandages of loose coupling is that Mock classes can be injected dur
 
 ## Storyboards
 
-Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to open instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
+Every viewcontroller is stored in an own storyboard. This prevents merge problems if multiple developer work on the UI. Each viewcontroller has a storyboard with the same name as the viewcontroller itself. The viewcontroller in the storyboard is marked as "Initial viewcontroller". In this way we can use a simple extension on UIViewController and UIStoryboard to instantiate every viewcontroller without knowing the storyboard name or some ID in the storyboard.
 
     let viewController = MoviesViewController.storyboardInstance()
+
+## Networking
+
+Networking is done with NSURLSession, not with Alamofire. For most cases NSURLSession is perfectly fine and there is no need to introduce a third party library. But there is nothing wrong with Alamofire, if you are used to it - go on. However, what is more important is to implement networking code only once and not repeat yourself all the time. That's why Networking is done with Swift Generics. By simply extending the WebService class with a few lines of code. New endpoints are implemented in this way in seconds.
+
+## Cocoapods
+
+Cocoapods is the de-facto package manager for iOS. Most available 3rd party libraries are integrated into iOS projects over Cocoapods. There is no real need for Cocoapods in this small sample App but for the sake of demonstration the famous SDWebImage is included for downloading and caching images.
+
+
+
 
 
 
