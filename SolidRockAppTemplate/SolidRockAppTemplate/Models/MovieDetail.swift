@@ -31,6 +31,27 @@ struct MovieDetail: Codable {
         case genre = "Genre"
     }
     
+    /// This initializer is used only for testing
+    init(title: String,
+         year: String,
+         imdbId: String,
+         image: URL,
+         writer: String,
+         actors: String,
+         plot: String,
+         director: String,
+         genre: String) {
+        self.title = title
+        self.year = year
+        self.imdbId = imdbId
+        self.image = image
+        self.writer = writer
+        self.actors = actors
+        self.plot = plot
+        self.director = director
+        self.genre = genre
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decodeIfPresent(String.self, forKey: .title)

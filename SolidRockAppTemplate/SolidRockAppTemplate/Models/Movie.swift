@@ -43,6 +43,19 @@ struct Movie: Codable {
         case image = "Poster"
     }
     
+    /// This initializer is used only for testing
+    init(title: String,
+         year: String,
+         type: MovieType,
+         imdbId: String,
+         image: URL) {
+        self.title = title
+        self.year = year
+        self.type = type
+        self.imdbId = imdbId
+        self.image = image
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decode(String.self, forKey: .title)

@@ -11,18 +11,25 @@ import Foundation
 struct SearchResult: Codable {
     let movies: [Movie]
     let totalResults: String
-    let reponse: String
+    let response: String
     
     enum CodingKeys: String, CodingKey {
         case movies = "Search"
         case totalResults = "totalResults"
-        case reponse = "Response"
+        case response = "Response"
+    }
+    
+    /// This initializer is used only for testing
+    init(movies: [Movie], totalResults: String, response: String) {
+        self.movies = movies
+        self.totalResults = totalResults
+        self.response = response
     }
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         movies = try values.decode([Movie].self, forKey: .movies)
         totalResults = try values.decode(String.self, forKey: .totalResults)
-        reponse = try values.decode(String.self, forKey: .reponse)
+        response = try values.decode(String.self, forKey: .response)
     }
 }

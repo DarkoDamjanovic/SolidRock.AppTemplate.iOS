@@ -51,14 +51,13 @@ extension MoviesPresenter: MoviesPresenterProtocol {
     
     func viewDidAppear() {
         movieService.searchMovies(searchTerm: self.searchTerm, page: 1) { [weak self] (result) in
-            guard let strongSelf = self else { return }
             switch result {
             case .success(let movies):
-                strongSelf.movies = movies
-                strongSelf.view.reloadDataSource()
+                self?.movies = movies
+                self?.view.reloadDataSource()
             case .failure(let error):
                 // TODO: error handling
-                strongSelf.log.error(error)
+                self?.log.error(error)
             }
         }
     }
@@ -74,9 +73,8 @@ extension MoviesPresenter: MoviesPresenterProtocol {
     func presenterForRowAt(indexPath: IndexPath) -> MovieListTableViewCellPresenterProtocol? {
         if movies.indices.contains(indexPath.row) {
             return MovieListTableViewCellPresenter(movie: movies[indexPath.row])
-        } else {
-            return nil
         }
+        return nil
     }
 }
 

@@ -46,6 +46,10 @@
 		A28F8832214551250078036A /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F8830214551250078036A /* MovieListTableViewCell.swift */; };
 		A28F8833214551250078036A /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28F8831214551250078036A /* MovieListTableViewCell.xib */; };
 		A28F883521455F5A0078036A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F883421455F5A0078036A /* Font.swift */; };
+		A28F883721456B460078036A /* MoviesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F883621456B460078036A /* MoviesPresenterTests.swift */; };
+		A28F883A2145800A0078036A /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F88392145800A0078036A /* WebServiceMock.swift */; };
+		A28F883C214580180078036A /* ConfigurationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F883B214580180078036A /* ConfigurationMock.swift */; };
+		A28F883E2145845B0078036A /* MovieServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28F883D2145845B0078036A /* MovieServiceMock.swift */; };
 		B12A0E7555FB23CD60F18E54 /* Pods_SolidRockAppTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F060E537C10A244788DF88 /* Pods_SolidRockAppTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +126,10 @@
 		A28F8830214551250078036A /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		A28F8831214551250078036A /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
 		A28F883421455F5A0078036A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A28F883621456B460078036A /* MoviesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenterTests.swift; sourceTree = "<group>"; };
+		A28F88392145800A0078036A /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		A28F883B214580180078036A /* ConfigurationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationMock.swift; sourceTree = "<group>"; };
+		A28F883D2145845B0078036A /* MovieServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceMock.swift; sourceTree = "<group>"; };
 		CD2C7DC01C9BB50AD697921C /* Pods_SolidRockAppTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolidRockAppTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF54DA05D80BD0B8352F3D3 /* Pods-SolidRockAppTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolidRockAppTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolidRockAppTemplateTests/Pods-SolidRockAppTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,8 +257,10 @@
 		A27B80432143062D000020E1 /* SolidRockAppTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				A28F883821457FF60078036A /* Mocks */,
 				A27B80462143062D000020E1 /* Info.plist */,
 				A2733C242143D56500B990E1 /* ConfigurationTests.swift */,
+				A28F883621456B460078036A /* MoviesPresenterTests.swift */,
 			);
 			path = SolidRockAppTemplateTests;
 			sourceTree = "<group>";
@@ -369,6 +379,16 @@
 				A28F881C214520040078036A /* MovieService.swift */,
 			);
 			path = MovieService;
+			sourceTree = "<group>";
+		};
+		A28F883821457FF60078036A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A28F88392145800A0078036A /* WebServiceMock.swift */,
+				A28F883D2145845B0078036A /* MovieServiceMock.swift */,
+				A28F883B214580180078036A /* ConfigurationMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		DE018875D71E9A43FC74E6C3 /* Pods */ = {
@@ -634,7 +654,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28F883C214580180078036A /* ConfigurationMock.swift in Sources */,
+				A28F883E2145845B0078036A /* MovieServiceMock.swift in Sources */,
 				A2733C252143D56500B990E1 /* ConfigurationTests.swift in Sources */,
+				A28F883A2145800A0078036A /* WebServiceMock.swift in Sources */,
+				A28F883721456B460078036A /* MoviesPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

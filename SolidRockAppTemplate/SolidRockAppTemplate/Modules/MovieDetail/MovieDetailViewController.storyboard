@@ -68,10 +68,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIN-TG-JvE">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-CZ-9Yp">
-                                                        <rect key="frame" x="141.5" y="135" width="37" height="37"/>
+                                                        <rect key="frame" x="141.5" y="255.5" width="37" height="37"/>
                                                         <color key="color" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </activityIndicatorView>
                                                 </subviews>
@@ -93,7 +93,6 @@
                                             <constraint firstItem="alq-T1-CGT" firstAttribute="width" secondItem="djj-qz-12z" secondAttribute="width" multiplier="0.45" id="JBb-NH-dT3"/>
                                             <constraint firstAttribute="trailing" secondItem="OLQ-Af-2gt" secondAttribute="trailing" constant="16" id="RCO-gY-Hg1"/>
                                             <constraint firstItem="OLQ-Af-2gt" firstAttribute="top" secondItem="alq-T1-CGT" secondAttribute="bottom" constant="32" id="U5P-ys-O81"/>
-                                            <constraint firstAttribute="bottom" secondItem="TIN-TG-JvE" secondAttribute="bottom" id="Uhi-Tb-7mu"/>
                                             <constraint firstItem="OLQ-Af-2gt" firstAttribute="leading" secondItem="djj-qz-12z" secondAttribute="leading" constant="16" id="XHr-QE-nnX"/>
                                             <constraint firstAttribute="trailing" secondItem="LzU-Sv-xYY" secondAttribute="trailing" constant="16" id="ZZX-ga-Q6C"/>
                                             <constraint firstAttribute="bottom" secondItem="2db-ct-mvn" secondAttribute="bottom" constant="16" id="bOo-zV-StU"/>
@@ -124,6 +123,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="djj-qz-12z" firstAttribute="width" secondItem="CZM-Dw-XFD" secondAttribute="width" id="Hw8-tJ-tPD"/>
+                            <constraint firstItem="JXW-K0-WdR" firstAttribute="bottom" secondItem="TIN-TG-JvE" secondAttribute="bottom" id="bGa-Br-I5B"/>
                             <constraint firstItem="LaX-kr-GmG" firstAttribute="trailing" secondItem="JXW-K0-WdR" secondAttribute="trailing" id="bc2-JP-kxT"/>
                             <constraint firstItem="LaX-kr-GmG" firstAttribute="bottom" secondItem="JXW-K0-WdR" secondAttribute="bottom" id="cHt-k3-bPW"/>
                             <constraint firstItem="djj-qz-12z" firstAttribute="height" secondItem="CZM-Dw-XFD" secondAttribute="height" priority="250" id="jI1-U1-6GO"/>
