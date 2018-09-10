@@ -18,7 +18,7 @@ enum Color {
     case tableViewCellTitleColor
     case tableViewCellSubTitleColor
     
-    var value: UIColor {
+    var rawValue: UIColor {
         switch self {
         case .appTintColor: return UIColor(red: 0.9, green: 0.1, blue: 0.1, alpha: 1.0)
         case .tableViewCellTitleColor: return UIColor.black

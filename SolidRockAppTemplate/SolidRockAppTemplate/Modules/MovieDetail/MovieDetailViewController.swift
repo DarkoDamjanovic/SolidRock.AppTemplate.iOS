@@ -65,27 +65,27 @@ extension MovieDetailViewController: MovieDetailViewProtocol {
         imageViewPoster.sd_setImage(with: presenter.imagePosterURL, completed: nil)
         
         labelTitle.text = presenter.title
-        labelTitle.font = presenter.titleFont.value
-        labelTitle.textColor = presenter.titleColor.value
+        labelTitle.font = presenter.titleFont.rawValue
+        labelTitle.textColor = presenter.titleColor.rawValue
         
         labelYear.text = presenter.year
-        labelYear.font = presenter.yearFont.value
-        labelYear.textColor = presenter.yearColor.value
+        labelYear.font = presenter.yearFont.rawValue
+        labelYear.textColor = presenter.yearColor.rawValue
         
         labelGenre.text = presenter.genre
-        labelGenre.font = presenter.genreFont.value
-        labelGenre.textColor = presenter.genreColor.value
+        labelGenre.font = presenter.genreFont.rawValue
+        labelGenre.textColor = presenter.genreColor.rawValue
         
         labelDirector.text = presenter.director
-        labelDirector.font = presenter.directorFont.value
-        labelDirector.textColor = presenter.directorColor.value
+        labelDirector.font = presenter.directorFont.rawValue
+        labelDirector.textColor = presenter.directorColor.rawValue
         
         labelActors.text = presenter.actors
-        labelActors.font = presenter.actorsFont.value
-        labelActors.textColor = presenter.actorsColor.value
+        labelActors.font = presenter.actorsFont.rawValue
+        labelActors.textColor = presenter.actorsColor.rawValue
         
         labelPlot.text = presenter.plot
-        labelPlot.font = presenter.plotFont.value
-        labelPlot.textColor = presenter.plotColor.value
+        labelPlot.font = presenter.plotFont.rawValue
+        labelPlot.textColor = presenter.plotColor.rawValue
     }
 }

@@ -15,8 +15,8 @@ class MovieListTableViewCell: UITableViewCell {
 
     func configure(presenter: MovieListTableViewCellPresenterProtocol) {
         labelTitle.text = presenter.title
-        labelTitle.textColor = presenter.titleColor.value
+        labelTitle.textColor = presenter.titleColor.rawValue
         labelSubtitle.text = presenter.subtitle
-        labelSubtitle.textColor = presenter.subTitleColor.value
+        labelSubtitle.textColor = presenter.subTitleColor.rawValue
     }
 }

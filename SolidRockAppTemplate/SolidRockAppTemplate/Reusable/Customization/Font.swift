@@ -15,7 +15,7 @@ enum Font {
     case subtitle
     case body
     
-    var value: UIFont {
+    var rawValue: UIFont {
         switch self {
         case .header: return UIFont.boldSystemFont(ofSize: 20)
         case .title: return UIFont.boldSystemFont(ofSize: 17)
