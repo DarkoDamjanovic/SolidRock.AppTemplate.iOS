@@ -50,7 +50,7 @@ Every dependency is injected as a protocol, never the concrete implementation it
 
 ## Testing
 
-One of the advandages of loose coupling is that Mock classes can be injected during Unit Tests. Which in turn enables complete testability for presentation and business logic. The view classes itself are not unit tested, they are just a "dumb" UI layer with no logic at all. It's the job of the creators of those classes to test them. (in this case Apples UIKit team) Also the `Builder` and `Router` are not unit tested.
+One of the advandages of loose coupling is that Mock classes can be injected during Unit Tests. Which in turn enables complete testability for presentation and business logic. The view classes itself are not unit tested, they are just a "dumb" UI layer with no logic at all. It's the job of the creators of those classes to test them. (in this case Apples UIKit team) Also the `Builder` and `Router` are not unit tested but are implicitely tested on UI testing.
 
 This approach leads to a possible code coverage of 100% at unit testing for all presentation logic and business logic.
 
