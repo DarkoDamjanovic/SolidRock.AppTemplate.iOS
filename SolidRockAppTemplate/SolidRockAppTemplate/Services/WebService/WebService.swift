@@ -19,7 +19,6 @@ class WebService {
     }
     
     private let log = Logger()
-    private static var instances = 0
     private let apiClient: ApiClient
     private let baseURL: URL
     private let apiKey: String
@@ -28,21 +27,6 @@ class WebService {
         self.baseURL = baseURL
         self.apiKey = apiKey
         self.apiClient = ApiClient()
-        assertSingletonInstance()
-    }
-    
-    private func assertSingletonInstance() {
-        #if DEBUG
-        // It is allowed and recommended to instantiate multiple instances of this class in UnitTests.
-        // In this way we can test the Singelton without the problems of shared state.
-        // That's why we do not do this assertion in case of testing.
-        // "isUnitTestRunning" is passed as an argument in the Test Profile (in the Xcode build scheme).
-        // Arguments passed there are written into UserDefaults, so we can check for them here.
-        if UserDefaults.standard.bool(forKey: UserDefaultsKeys.isUnitTestRunning.rawValue) == false {
-            WebService.instances += 1
-            assert(WebService.instances == 1, "Do not create multiple instances of this class. Get it thru the shared dependencies in your module.")
-        }
-        #endif
     }
 }
 
