@@ -39,7 +39,7 @@ Therefore the rest of this document will use MVP as the architecture style of ch
 
 # Solid Rock's MVP
 
-SolidRock App Template uses the MVP (Model View Presenter) architecture pattern. Additionally a `Builder` and `Router` classes are created. This idea originated from the "Viper" architecture pattern. 
+SolidRock App Template uses the MVP (Model View Presenter) architecture pattern. Additionally a `Builder` and `Router` classes are created. This idea originated from the "Viper" architecture pattern. (https://www.objc.io/issues/13-architecture/viper/)
 
 * `Builder`
 
