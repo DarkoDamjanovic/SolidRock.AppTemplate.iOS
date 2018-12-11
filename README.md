@@ -86,7 +86,7 @@ See: https://en.wikipedia.org/wiki/Dependency_injection
 
 In this template every dependency which is needed by a module is injected by a `Builder` class. Usually dependencies can be created directly by the `Builder` itself. If shared dependencies are needed then also the `Builder` injects it into the module and additionally forwards the shared dependencies to the `Router`. The `Router`in turn can use the `SharedDependencies` to inject them into the next `Builder` and so on. In this way the `SharedDependencies` are passed from one module to the other without the need for global access to Singletons.
 
-# Singletons
+# The Singleton Design Pattern
 
 By sticking to the principles of loose coupling with the help of dependency injection we can completely give up the Singleton design pattern. Singletons are problematic in many ways. Because they are globally reachable with "static" access it is very easy to run into all the problems of shared mutable state. This is especially problematic with concurrent access to Singletons. Because multiple threads can access the same mutable data at the same time all the problems of concurrency like deadlocks and race conditions can come up. Apart from this Singletons are really hard to unit test, because their global state violates the rule of unit testing that every test should be independent of any other test. Therefore we are going to avoid Singletons as much as possible. (we can't avoid them completely because many 3rd party frameworks come with Singletons included)
 
@@ -103,6 +103,18 @@ One of the advandages of loose coupling and dependency injection is that Mock cl
 This approach leads to a possible code coverage of 100% at unit testing for all presentation logic and business logic.
 
 ![SolidRock](https://github.com/DarkoDamjanovic/SolidRock.AppTemplate.iOS/blob/master/codecoverage.png "SolidRock")
+
+# The Facade Design Pattern
+
+The Facade design pattern can be used to simplify usage of more complex functionality. Additionally strong dependencies to multiple services are reduced. Some examples would be: 
+
+- having a specific type of persistence solution, e.g. a Realm Database. The correct solution would be not to create a 'RealmService' and use it from everywhere in code but to create an facade 'PersistenceService'. The interface of this facade should be agnostic to the used persistence method. There should be no 'Realm' specific datatypes in the interface at all. So later on 'Realm' could be replaced at a single point with 'Sqlite' if needed (or anything else). The user of the 'PersistenceService' does not need to know at all what is hidden behind the implementation. The only thing he needs to know it that his data will be persisted (by any means appropriate).
+ 
+ - having multiple Analytics Services in the App. For example Mixpanel, Adjust and Fabric. It is not a good idea to create services for each of them and then use them thru the whole App. The better solution is to create a facade 'AnalyticsService' and behind this all other used analytics services are hidden. 
+
+# The Publish-Subscribe Design Pattern
+
+The publish-subscribe design pattern is in iOS already implemented thru the NSNotification class. (which is a flavor of Observer pattern) Clients can subscripe to specific topics and will get notified on updates. Use this to further improve loose coupling in the whole system. As publishers need not to know anything of the subscribers it get's really easy to exchange them as needed. It is also perfectly fine for testing implementations like this. One can even create his own NSNotificationCenters for unit tests.  
 
 # Storyboards
 
